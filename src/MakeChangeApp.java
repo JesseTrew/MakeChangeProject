@@ -31,16 +31,14 @@ public class MakeChangeApp {
 			
 			priceCashInDiff = cashTimesOneHundred - priceTimesOneHundred;			
 			
-			if (priceCashInDiff > 20) {
-				twenties = priceCashInDiff/2000;
-				tens = (priceCashInDiff - (twenties * 2000)) / 1000;
-				fives = (priceCashInDiff - (twenties * 2000 + tens * 1000)) / 500;
-				ones = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500)) / 100;
-				quarters = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100)) / 25;
-				dimes = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100 + quarters * 25)) / 10;
-				nickels = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100 + quarters * 25 + dimes * 10)) / 5;
-				pennies = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100 + quarters * 25 + dimes * 10 + nickels * 5));
-			}
+			twenties = priceCashInDiff/2000;
+			tens = (priceCashInDiff - (twenties * 2000)) / 1000;
+			fives = (priceCashInDiff - (twenties * 2000 + tens * 1000)) / 500;
+			ones = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500)) / 100;
+			quarters = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100)) / 25;
+			dimes = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100 + quarters * 25)) / 10;
+			nickels = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100 + quarters * 25 + dimes * 10)) / 5;
+			pennies = (priceCashInDiff - (twenties * 2000 + tens * 1000 + fives * 500 + ones * 100 + quarters * 25 + dimes * 10 + nickels * 5));
 			
 			System.out.println("Total change: ");
 			System.out.println();
